@@ -25,7 +25,8 @@ export default () => {
     shortName: '',
     expectedPrice: 0,
     description: '',
-    color: null
+    color: null,
+    position: ''
   })
 
   const [products, setProducts] = useState<Product[]>([])
@@ -90,10 +91,10 @@ export default () => {
 
   return (
     <>
-      <h1>Employee</h1>
+      <h1>Product</h1>
       <Button variant="outlined" onClick={onAdd}>Add</Button>
       <FTable
-        tableName={'employee hihi'}
+        tableName={'Product'}
         headers={headers}
         rows={products}
         onUpdate={onUpdate}

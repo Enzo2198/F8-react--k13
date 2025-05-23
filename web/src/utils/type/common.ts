@@ -24,4 +24,5 @@ export interface Product extends Master {
   expectedPrice: number | null
   description: string | null
   color: number | string | null
+  position: string | null
 }

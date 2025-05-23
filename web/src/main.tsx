@@ -4,6 +4,7 @@ import './index.css'
 import Product from './pages/Product'
 import Employee from './pages/Employee'
 import Colors from './pages/Colors'
+import TodoList from "./pages/TodoList";
 // import App from './App.tsx'
 
 import {
@@ -24,6 +25,10 @@ const router = createBrowserRouter([
     {
         path: "/employee",
         element: <Employee/>,
+    },
+    {
+        path: "/list",
+        element: <TodoList/>,
     },
 ]);
 

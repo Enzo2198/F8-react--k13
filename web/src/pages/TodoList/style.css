@@ -1,0 +1,29 @@
+.container {
+    display: flex;
+    justify-content: center;
+}
+
+.header {
+    border-bottom: 1px solid #000;
+    width: 100%;
+}
+
+.header h1 {
+    text-align: center;
+}
+
+.body {
+    margin-top: 24px;
+    width: 100%;
+}
+
+.list-style {
+    background: #e3e4e6;
+    display: flex;
+    padding: 8px;
+    margin-top: 12px;
+    border-radius: 6px ;
+    gap: 8px;
+}
+
+
