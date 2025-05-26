@@ -4,7 +4,8 @@ import './index.css'
 import Product from './pages/Product'
 import Employee from './pages/Employee'
 import Colors from './pages/Colors'
-import TodoList from "./pages/TodoList";
+import TodoList from "./pages/TodoList"
+import QuizApp from './pages/QuizApp'
 // import App from './App.tsx'
 
 import {
@@ -30,6 +31,11 @@ const router = createBrowserRouter([
         path: "/list",
         element: <TodoList/>,
     },
+    {
+        path: "/quizApp",
+        element: <QuizApp/>,
+    },
+
 ]);
 
 
