@@ -1,4 +1,4 @@
-import { useState } from "react";
+import {memo, useState} from "react";
 import { Box, Button, TextField } from "@mui/material";
 import { Todo, TodoAction } from "../../../utils";
 import '../style.css'
@@ -8,12 +8,17 @@ interface TodoItemProps {
   dispatch: React.Dispatch<TodoAction>;
 }
 
-export default function TodoItem({ todo, dispatch }: TodoItemProps) {
+function TodoItem({ todo, dispatch }: TodoItemProps) {
   const [isEditing, setEditing] = useState(false);
   const [text, setText] = useState(todo.text);
 
   const handleEdit = () => {
-    dispatch({ type: "edit", payload: { id: todo.id, text } });
+    const trimmedText = text.trim();
+    if (trimmedText) {
+      dispatch({ type: "edit", payload: { id: todo.id, text: trimmedText } });
+    } else {
+      setText(todo.text);
+    }
     setEditing(false);
   };
 
@@ -44,3 +49,5 @@ export default function TodoItem({ todo, dispatch }: TodoItemProps) {
     </Box>
   );
 }
+
+export default memo(TodoItem)

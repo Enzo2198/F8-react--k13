@@ -1,12 +1,6 @@
 import { useQuiz } from "../context/QuizContext";
 import { questions } from "../data/questions";
-import Button from "@mui/material/Button";
-import Box from "@mui/material/Box";
-import Typography from "@mui/material/Typography";
-import Card from "@mui/material/Card";
-import CardContent from "@mui/material/CardContent";
-import Stack from "@mui/material/Stack";
-import Container from "@mui/material/Container";
+import { Button, Box, Typography, Card, CardContent, Stack, Container} from "@mui/material";
 
 export default function Quiz() {
   const { state, dispatch } = useQuiz();
