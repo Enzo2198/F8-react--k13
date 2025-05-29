@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.pa-4 {
+    padding: 16px;
+}
+.pt-0 {
+    padding-top: 0;
+}
+.autocomplete {
+    width: 100%;
+    position: relative;
+}
+input {
+    width: 100%;
+    font-size: 20px;
+    padding: 12px;
+    outline: none;
+    border: 1px solid #8083a6;
+    border-radius: 5px;
+}
+input:focus {
+    border: 1px solid #4451EB;
+}
+input:focus ~ .dropdown  {
+    display: block;
+}
+.dropdown {
+    display: none;
+    border: 1px solid #ccc;
+    max-height: 200px;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+    position: absolute;
+    width: calc(100% - 32px);
+    z-index: 1;
+    background: white;
+}
+.dropdown .item {
+    width: 100%;
+    padding: 8px;
+    font-size: 20px;
+    cursor: pointer;
+    /*border-bottom: 1px solid #ccc;*/
+}
+
+.dropdown .item:hover {
+    background: rgba(175, 170, 170, 0.4);
+}
+
+.highlight {
+    background-color: #cad0fb;
+}
+.overlay {
+    width: 100%;
+    height: 100vh;
+    background: #aaaaaa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dialog {
+    width: 400px;
+    height: 600px;
+    background: white;
+    position: relative;
+}
+.dialog__header {
+    color: white;
+    background: #333333;
+    padding: 16px;
+    font-size: 24px;
+    display: flex;
+    justify-content: space-between;
+}
+/*.avata {*/
+/*    width: 70px;*/
+/*    height: 70px;*/
+/*    background: #4451EB;*/
+/*    margin: 16px 0 0 16px;*/
+/*    background-image: url("https://png.pngtree.com/png-vector/20190411/ourmid/pngtree-vector-camera-icon-png-image_926156.jpg");*/
+/*    background-size: contain;*/
+/*    border-radius: 10px;*/
+/*}*/
+.dialog__action {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 1;
+}
+.dialog__action button{
+    width: 100%;
+    background: #24A648;
+    color: white;
+    margin: auto;
+    padding: 16px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.dialog__action:hover {
+    opacity: 0.8;
+}

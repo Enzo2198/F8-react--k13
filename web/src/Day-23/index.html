@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="overlay">
+    <div class="dialog">
+        <div class="dialog__header">
+            <span>New Member</span>
+            <span>&times</span>
+        </div>
+        <div class="dialog__body">
+            <form autocomplete="off" enctype="multipart/form-data">
+                <label for="avata">
+                    <div class="avata"></div>
+                </label>
+                <input id="avata" type="file" hidden=""/>
+                <div class="autocomplete pa-4">
+                    <input placeholder="name" name="name" type="text">
+                    <div class="dropdown"></div>
+                </div>
+            </form>
+        </div>
+        <div class="dialog__action">
+            <button type="submit">Submit</button>
+        </div>
+    </div>
+</div>
+
+<script src="main.js"></script>
+</body>
+</html>
