@@ -6,6 +6,7 @@ import Employee from './pages/Employee'
 import Colors from './pages/Colors'
 import TodoList from "./pages/TodoList"
 import QuizApp from './pages/QuizApp'
+import Components from "./homeworks/Day-30/Components";
 // import App from './App.tsx'
 
 import {
@@ -35,6 +36,11 @@ const router = createBrowserRouter([
         path: "/quizApp",
         element: <QuizApp/>,
     },
+    {
+        path: "/day30",
+        element: <Components/>,
+    },
+
 
 ]);
 
